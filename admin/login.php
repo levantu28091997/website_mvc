@@ -1,3 +1,13 @@
+<?php require_once "../classes/adminlogin.php"; ?>
+<?php
+	$user =  new Adminlogin();
+	if ($_SERVER["REQUEST_METHOD"] === "POST") {
+		$name = $_POST["username"];
+		$pass = $_POST["password"];
+
+		$login_check = $user->login_admin($name, $pass);
+	}
+?>
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">

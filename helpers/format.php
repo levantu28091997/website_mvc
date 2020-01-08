@@ -6,7 +6,7 @@
 	{
 		
 		function formatDate($date){
-			return date("F j, Y, g:i a", strtotime($date))
+			return date("F j, Y, g:i a", strtotime($date));
 		}
 
 		function textShort($text, $limit=400){
